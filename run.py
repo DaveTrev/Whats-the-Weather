@@ -10,3 +10,7 @@ import pyfiglet
 config = configparser.ConfigParser()
 config.read('config.ini')
 
+
+# pyfgilet used to style app greeting
+welcome = pyfiglet.figlet_format("Whats the weather?")
+print(welcome)
