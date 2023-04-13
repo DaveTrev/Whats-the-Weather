@@ -29,3 +29,17 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+
+
+Resources Used for project ----
+api from openweather.com
+hiding api keys https://blog.netwrix.com/2022/11/14/how-to-hide-api-keys-github/#:~:text=So%20how%20can%20we%20hide,control%20(e.g.%2C%20gitignore).
+configparser - reading config file, hiding api key
+configparser - https://www.tutorialandexample.com/how-to-write-a-configuration-file-in-python
+https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+youtube - https://www.youtube.com/watch?v=baWzHKfrvqw
+setting timeout for requests - https://reqbin.com/code/python/3zdpeao1/python-requests-timeout-example
+python checker - https://www.pythonchecker.com/
+python import statements - https://careerkarma.com/blog/python-import/#:~:text=import%20Python%3A%20Using%20the%20from,can%20use%20the%20from%20statement.
+https://www.geeksforgeeks.org/print-colors-python-terminal/
+https://www.geeksforgeeks.org/print-colors-python-terminal/
