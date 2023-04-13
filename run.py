@@ -23,8 +23,10 @@ print(user_input)
 
 # Request data from openweather.com 
 open_weather_data = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + \
-f"{user_input}&units=metric&APPID={config['API']['key']}")
+f"{user_input}&units=metric&APPID={config['API']['key']}", timeout=5)
 
+
+# Error handling for data request, no city found / print data
 if open_weather_data.json()['cod'] == '404':
     print("No City Found")
 else:
