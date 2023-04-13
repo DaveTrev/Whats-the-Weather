@@ -25,9 +25,11 @@ print(user_input)
 open_weather_data = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + \
 f"{user_input}&units=metric&APPID={config['API']['key']}")
 
+if open_weather_data.json()['cod'] == '404':
+    print("No City Found")
+else:
+    current_weather = open_weather_data.json()['weather'][0]['main']
+    temp = round(open_weather_data.json()['main']['temp'])
 
-current_weather = open_weather_data.json()['weather'][0]['main']
-temp = round(open_weather_data.json()['main']['temp'])
-
-print(f"The weather in {user_input} is: {current_weather}")
-print(f"The temperature in {user_input} is: {temp}°C")
+    print(f"The weather in {user_input} is: {current_weather}")
+    print(f"The temperature in {user_input} is: {temp}°C")
