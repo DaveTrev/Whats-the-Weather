@@ -27,6 +27,7 @@ f"{user_input}&units=metric&APPID={config['API']['key']}")
 
 
 current_weather = open_weather_data.json()['weather'][0]['main']
-temp = open_weather_data.json()['main']['temp']
+temp = round(open_weather_data.json()['main']['temp'])
 
-print(current_weather, temp)
+print(f"The weather in {user_input} is: {current_weather}")
+print(f"The temperature in {user_input} is: {temp}°C")
