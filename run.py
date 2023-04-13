@@ -23,4 +23,4 @@ print(user_input)
 open_weather_data = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + \
 f"{user_input}&units=metric&APPID={config['API']['key']}")
 
-print(open_weather_data.status_code)
+print(open_weather_data.json())

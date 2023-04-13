@@ -43,3 +43,7 @@ python checker - https://www.pythonchecker.com/
 python import statements - https://careerkarma.com/blog/python-import/#:~:text=import%20Python%3A%20Using%20the%20from,can%20use%20the%20from%20statement.
 https://www.geeksforgeeks.org/print-colors-python-terminal/
 https://www.geeksforgeeks.org/print-colors-python-terminal/
+https://stackoverflow.com/questions/42475681/using-openweather-json-api-how-to-fetch-the-temperature
+
+Data returned from open weather for request "berlin"
+{'coord': {'lon': 13.4105, 'lat': 52.5244}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 6.29, 'feels_like': 3.99, 'temp_min': 4.49, 'temp_max': 8.3, 'pressure': 990, 'humidity': 90}, 'visibility': 10000, 'wind': {'speed': 3.09, 'deg': 210}, 'clouds': {'all': 0}, 'dt': 1681362490, 'sys': {'type': 2, 'id': 2011538, 'country': 'DE', 'sunrise': 1681359231, 'sunset': 1681408782}, 'timezone': 7200, 'id': 2950159, 'name': 'Berlin', 'cod': 200}
