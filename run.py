@@ -14,7 +14,7 @@ heroku deploy
 while True:
 
   print("1) Current Weather")
-  print("2) Forcast") api.openweathermap.org/data/2.5/forecast?q= + 
+  print("2) Forcast") api.openweathermap.org/data/2.5/forecast?q= +
   {city name}&appid={API key}
   print("3) Quit")
 
@@ -24,7 +24,8 @@ while True:
 import configparser
 import requests
 import pyfiglet
-
+import colorama
+from colorama import Fore, Style
 
 # Use configparser to read config.ini file
 config = configparser.ConfigParser()
@@ -33,7 +34,7 @@ config.read('config.ini')
 
 # pyfgilet used to style app greeting
 welcome = pyfiglet.figlet_format("Whats the weather?")
-print(welcome)
+print(Fore.GREEN + welcome)
 
 # Prompt user to enter a city
 user_input = input("Enter your city: ")
@@ -52,5 +53,5 @@ else:
     current_weather = open_weather_data.json()['weather'][0]['main']
     temp = round(open_weather_data.json()['main']['temp'])
 
-    print(f"The weather in {user_input} is: {current_weather}")
-    print(f"The temperature in {user_input} is: {temp}°C")
+    print(Fore.BLUE +f"The weather in {user_input} is: {current_weather}")
+    print(Fore.BLUE +f"The temperature in {user_input} is: {temp}°C")
