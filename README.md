@@ -49,6 +49,7 @@ https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python
 https://datagy.io/python-requests-timeouts/
 https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 https://towardsdatascience.com/prettify-your-terminal-text-with-termcolor-and-pyfiglet-880de83fda6b
+https://stackoverflow.com/questions/39473297/how-do-i-print-colored-output-with-python-3
 
 Data returned from open weather for request "berlin"
 {'coord': {'lon': 13.4105, 'lat': 52.5244}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 6.29, 'feels_like': 3.99, 'temp_min': 4.49, 'temp_max': 8.3, 'pressure': 990, 'humidity': 90}, 'visibility': 10000, 'wind': {'speed': 3.09, 'deg': 210}, 'clouds': {'all': 0}, 'dt': 1681362490, 'sys': {'type': 2, 'id': 2011538, 'country': 'DE', 'sunrise': 1681359231, 'sunset': 1681408782}, 'timezone': 7200, 'id': 2950159, 'name': 'Berlin', 'cod': 200}

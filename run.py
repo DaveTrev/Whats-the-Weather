@@ -53,5 +53,5 @@ else:
     current_weather = open_weather_data.json()['weather'][0]['main']
     temp = round(open_weather_data.json()['main']['temp'])
 
-    print(Fore.BLUE +f"The weather in {user_input} is: {current_weather}")
-    print(Fore.BLUE +f"The temperature in {user_input} is: {temp}°C")
+    print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
+    print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
