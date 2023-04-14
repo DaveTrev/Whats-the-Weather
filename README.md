@@ -44,7 +44,7 @@ python import statements - https://careerkarma.com/blog/python-import/#:~:text=i
 https://www.geeksforgeeks.org/print-colors-python-terminal/
 https://www.geeksforgeeks.org/print-colors-python-terminal/
 https://stackoverflow.com/questions/42475681/using-openweather-json-api-how-to-fetch-the-temperature
-
+https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python
 ----need to add requests.get
 https://datagy.io/python-requests-timeouts/
 

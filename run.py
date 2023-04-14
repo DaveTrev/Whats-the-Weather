@@ -2,6 +2,24 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
+"""
+Todo list
+colour program title
+add menu options
+give option to repeat program or quit
+readme
+heroku deploy
+
+
+while True:
+
+  print("1) Current Weather")
+  print("2) Forcast") api.openweathermap.org/data/2.5/forecast?q= + 
+  {city name}&appid={API key}
+  print("3) Quit")
+
+
+"""
 # Import libraries
 import configparser
 import requests
@@ -21,9 +39,10 @@ print(welcome)
 user_input = input("Enter your city: ")
 print(user_input)
 
-# Request data from openweather.com 
+# Request data from openweather.com
 open_weather_data = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" +
-    f"{user_input}&units=metric&APPID={config['API']['key']}", timeout=5)
+                                 f"{user_input}&units=metric&APPID=" +
+                                 f"{config['API']['key']}", timeout=5)
 
 
 # Error handling for data request, no city found / print data
