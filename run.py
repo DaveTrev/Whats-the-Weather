@@ -85,9 +85,20 @@ while True:
                 date = data["dt_txt"][:10]
                 time = data["dt_txt"][11:16]
                 temp = round(data["main"]["temp"])
-                print(date, time, temp)
+                weather = data["weather"][0]["main"]
+                print(Fore.BLUE + f"{date} at {time} - {weather}, {temp}°C")
+            while True:
+                print(Fore.GREEN + "Select what you would like to do next")
+                print(Fore.GREEN + "1) Check weather in another city.")
+                print(Fore.GREEN + "2) To return to the main menu.")
+                choice = input(Fore.GREEN + "Enter your choice: 1 or 2: ")
+                choice = choice.strip()
 
-
+                if choice == "1":
+                    break
+                elif choice == "2":
+                    break
+            continue
 
     elif choice == "3":
         break
