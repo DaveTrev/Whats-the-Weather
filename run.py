@@ -4,17 +4,14 @@
 
 """
 Todo list
-colour program title
-add menu options
+colour program title  **
+add menu options **
+add clouds and rain
 give option to repeat program or quit
+
+
 readme
 heroku deploy
-
- api.openweathermap.org/data/2.5/forecast?q= +
-  {city name}&appid={API key}
-  
-
-
 """
 # Import libraries
 import configparser
@@ -68,10 +65,7 @@ while True:
 
         # Request data from openweather.com
         open_weather_data = requests.get(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + f"{user_input}&units=metric&APPID="
-            + f"{config['API']['key']}",
-            timeout=5,
+            " https://api.openweathermap.org/data/2.5/forecast?q={user_input}&units=metric&APPID={config['API']['key']}", timeout=5,
         )
 
         # Error handling for data request, no city found / print data
