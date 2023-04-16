@@ -1,8 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-
 # Import libraries
 import configparser
 import requests
@@ -76,7 +72,7 @@ while True:
             + f"{user_input}&units=metric&APPID="
             + f"{config['API']['key']}", timeout=5,
         )
-        if open_weather_data_f.json()["cod"] == "404":
+        if open_weather_data_f.json()["cod"] == "404":  # Error handling 4 data
             print("No City Found")
         else:
             forecast_data_5 = open_weather_data_f.json()["list"]
