@@ -54,10 +54,10 @@ while True:
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
 
             while True:
-                print(Fore.GREEN + f"Select what you would like to do next")
-                print(Fore.GREEN + f"1) Check weather in another city.")
-                print(Fore.GREEN + f"2) To return to the main menu.")
-                choice = input(Fore.GREEN + f"Enter your choice: 1 or 2: ")
+                print(Fore.GREEN + "Select what you would like to do next")
+                print(Fore.GREEN + "1) Check weather in another city.")
+                print(Fore.GREEN + "2) To return to the main menu.")
+                choice = input(Fore.GREEN + "Enter your choice: 1 or 2: ")
                 choice = choice.strip()
 
                 if choice == "1":
