@@ -33,7 +33,7 @@ Happy coding!
 Todo list
 colour program title  **
 add menu options **
-add clouds and rain
+install time to create pause for user
 give option to repeat program or quit
 choose another city option on current and forecast
 
@@ -49,6 +49,7 @@ configparser - reading config file, hiding api key
 configparser - https://www.tutorialandexample.com/how-to-write-a-configuration-file-in-python
 https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 youtube - https://www.youtube.com/watch?v=baWzHKfrvqw
+youtube - https://www.youtube.com/watch?v=jpsmNr4-v4Y
 setting timeout for requests - https://reqbin.com/code/python/3zdpeao1/python-requests-timeout-example
 python checker - https://www.pythonchecker.com/
 python import statements - https://careerkarma.com/blog/python-import/#:~:text=import%20Python%3A%20Using%20the%20from,can%20use%20the%20from%20statement.
@@ -61,7 +62,7 @@ https://datagy.io/python-requests-timeouts/
 https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 https://towardsdatascience.com/prettify-your-terminal-text-with-termcolor-and-pyfiglet-880de83fda6b
 https://stackoverflow.com/questions/39473297/how-do-i-print-colored-output-with-python-3
-
+weather data and forecasts - https://medium.com/@joseph.magiya/weather-data-and-forecasts-from-open-weather-api-1636691d5ba
 five day forecast open weather link https://openweathermap.org/forecast5
 
 Data returned from open weather for current weather request "berlin"

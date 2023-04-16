@@ -67,7 +67,7 @@ while True:
             continue
 
     elif choice == "2":
-        user_input = input("Enter your city: ")
+        user_input = input("Enter your city, for a 5-day forecast: ")
         print(user_input)
 
         # Request data from openweather.com
@@ -76,19 +76,19 @@ while True:
             + f"{user_input}&units=metric&APPID="
             + f"{config['API']['key']}", timeout=5,
         )
-        print(open_weather_data_f.content)
-
-        """
-        # Error handling for data request, no city found / print data
-        if open_weather_data.json()["cod"] == "404":
+        if open_weather_data_f.json()["cod"] == "404":
             print("No City Found")
         else:
-            current_weather = open_weather_data.json()["weather"][0]["main"]
-            temp = round(open_weather_data.json()["main"]["temp"])
+            forecast_data_5 = open_weather_data_f.json()["list"]
+            print(Fore.BLUE + f"5-day forecast for {user_input}: ")
+            for data in forecast_data_5:
+                date = data["dt_txt"][:10]
+                time = data["dt_txt"][11:16]
+                temp = round(data["main"]["temp"])
+                print(date, time, temp)
 
-            print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
-            print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
-        """
+
+
     elif choice == "3":
         break
     else:
