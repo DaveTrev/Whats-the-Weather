@@ -56,10 +56,12 @@ while True:
             current_weather = open_weather_data_c.json()["weather"][0]["main"]
             temp = round(open_weather_data_c.json()["main"]["temp"])
             humid = open_weather_data_c.json()["main"]["humidity"]
+            cloud_cover = open_weather_data_c.json()["clouds"]["all"]
 
             print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
             print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
+            print(Fore.BLUE + f"The cloud cover in {user_input} is: {cloud_cover}")
 
     elif choice == "2":
         user_input = input("Enter your city: ")
