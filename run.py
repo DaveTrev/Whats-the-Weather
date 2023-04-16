@@ -2,17 +2,7 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
-"""
-Todo list
-colour program title  **
-add menu options **
-add clouds and rain
-give option to repeat program or quit
 
-
-readme
-heroku deploy
-"""
 # Import libraries
 import configparser
 import requests
@@ -29,7 +19,7 @@ print(Fore.GREEN + welcome)
 
 while True:
     print("1) Current Weather")
-    print("2) Forcast")
+    print("2) 5-day Forcast")
     print("3) Quit")
 
     choice = input("Enter Choice: ")
@@ -63,6 +53,19 @@ while True:
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
 
+            while True:
+                print(Fore.GREEN + f"Select what you would like to do next")
+                print(Fore.GREEN + f"1) Check weather in another city.")
+                print(Fore.GREEN + f"2) To return to the main menu.")
+                choice = input(Fore.GREEN + f"Enter your choice: 1 or 2: ")
+                choice = choice.strip()
+
+                if choice == "1":
+                    break
+                elif choice == "2":
+                    break
+            continue
+
     elif choice == "2":
         user_input = input("Enter your city: ")
         print(user_input)
@@ -74,9 +77,6 @@ while True:
             + f"{config['API']['key']}", timeout=5,
         )
         print(open_weather_data_f.content)
-
-
-
 
         """
         # Error handling for data request, no city found / print data

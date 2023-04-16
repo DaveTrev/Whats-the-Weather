@@ -29,7 +29,18 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+"""
+Todo list
+colour program title  **
+add menu options **
+add clouds and rain
+give option to repeat program or quit
+choose another city option on current and forecast
 
+readme
+## functionality i would like to add, generate current weather and give option to compare against historical data
+heroku deploy
+"""
 
 Resources Used for project ----
 api from openweather.com
