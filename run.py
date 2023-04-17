@@ -1,4 +1,4 @@
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+
 # Import libraries
 import configparser
 import requests
@@ -18,13 +18,13 @@ while True:
     print("2) 5-day Forcast")
     print("3) Quit")
 
-    choice = input("Enter Choice: ")
+    choice = input("Enter Choice:\n ")
     # using strip method to removing leading trailing white space
     choice = choice.strip()
 
     # Prompt user to enter a city
     if choice == "1":
-        user_input = input("Enter your city: ")
+        user_input = input("Enter your city:\n ")
         print(user_input)
 
         # Request data from openweather.com
@@ -53,8 +53,9 @@ while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Check weather in another city.")
                 print(Fore.GREEN + "2) To return to the main menu.")
-                choice = input(Fore.GREEN + "Enter your choice: 1 or 2: ")
-                choice = choice.strip()
+                choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
+                # removes or truncates the given characters from the beginning and the end of the original string
+                choice = choice.strip()  # change this menu option to return to main menu or quit program
 
                 if choice == "1":
                     break
@@ -63,7 +64,7 @@ while True:
             continue
 
     elif choice == "2":
-        user_input = input("Enter your city, for a 5-day forecast: ")
+        user_input = input("Enter your city, for a 5-day forecast:\n ")
         print(user_input)
 
         # Request data from openweather.com
@@ -87,8 +88,9 @@ while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Check weather in another city.")
                 print(Fore.GREEN + "2) To return to the main menu.")
-                choice = input(Fore.GREEN + "Enter your choice: 1 or 2: ")
-                choice = choice.strip()
+                choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
+                # removes or truncates the given characters from the beginning and the end of the original string
+                choice = choice.strip()        ## change this menu option to return to main menu or quit program
 
                 if choice == "1":
                     break
