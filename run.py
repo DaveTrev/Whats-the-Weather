@@ -47,11 +47,13 @@ while True:
         else:
             current_weather = open_weather_data_c.json()["weather"][0]["main"]
             temp = round(open_weather_data_c.json()["main"]["temp"])
+            feels_like = open_weather_data_c.json()["main"]["feels_like"]
             humid = open_weather_data_c.json()["main"]["humidity"]
             clouds = open_weather_data_c.json()["clouds"]["all"]
 
             print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
             print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
+            print(Fore.BLUE + f"It feels like in {user_input} is: {feels_like}°C")
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
 

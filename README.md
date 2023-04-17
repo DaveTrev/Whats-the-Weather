@@ -64,6 +64,10 @@ https://towardsdatascience.com/prettify-your-terminal-text-with-termcolor-and-py
 https://stackoverflow.com/questions/39473297/how-do-i-print-colored-output-with-python-3
 weather data and forecasts - https://medium.com/@joseph.magiya/weather-data-and-forecasts-from-open-weather-api-1636691d5ba
 five day forecast open weather link https://openweathermap.org/forecast5
+Time Series Analysis and Weather Forecast in Python - https://medium.com/@llmkhoa511/time-series-analysis-and-weather-forecast-in-python-e80b664c7f71
+max min temp from stackoverflow javascript - https://stackoverflow.com/questions/55222100/how-to-get-min-and-max-temp-for-the-day-from-5-day-weather-forecast-js
+Creating daily forecasts with python - https://www.tomorrow.io/blog/creating-daily-forecasts-with-a-python-weather-api/
+
 
 Data returned from open weather for current weather request "berlin"
 {'coord': {'lon': 13.4105, 'lat': 52.5244}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 6.29, 'feels_like': 3.99, 'temp_min': 4.49, 'temp_max': 8.3, 'pressure': 990, 'humidity': 90}, 'visibility': 10000, 'wind': {'speed': 3.09, 'deg': 210}, 'clouds': {'all': 0}, 'dt': 1681362490, 'sys': {'type': 2, 'id': 2011538, 'country': 'DE', 'sunrise': 1681359231, 'sunset': 1681408782}, 'timezone': 7200, 'id': 2950159, 'name': 'Berlin', 'cod': 200}
