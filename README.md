@@ -67,6 +67,7 @@ five day forecast open weather link https://openweathermap.org/forecast5
 Time Series Analysis and Weather Forecast in Python - https://medium.com/@llmkhoa511/time-series-analysis-and-weather-forecast-in-python-e80b664c7f71
 max min temp from stackoverflow javascript - https://stackoverflow.com/questions/55222100/how-to-get-min-and-max-temp-for-the-day-from-5-day-weather-forecast-js
 Creating daily forecasts with python - https://www.tomorrow.io/blog/creating-daily-forecasts-with-a-python-weather-api/
+rain print out  stackoverflow - https://stackoverflow.com/questions/68696505/how-to-find-rain-in-a-variable-for-openweathermap
 
 
 Data returned from open weather for current weather request "berlin"

@@ -51,12 +51,17 @@ while True:
             humid = open_weather_data_c.json()["main"]["humidity"]
             clouds = open_weather_data_c.json()["clouds"]["all"]
 
+
             print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
             print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
             print(Fore.BLUE + f"It feels like in {user_input} is: {feels_like}°C")
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
-
+            if 'Rain' in current_weather:
+                print(Fore.YELLOW + "bring a jacket, you don't need to water the flowers, it's going to rain today")
+            else:
+                print(Fore.YELLOW + "Looks like no rain is due for today!")
+                
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Check weather in another city.")
