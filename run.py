@@ -75,6 +75,7 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
+                    print("Thanks for using DaveTrev's Whats the weather app")
                     sys.exit()  # give user option to quit or run again
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
@@ -111,11 +112,13 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
+                    print("Thanks for using DaveTrev's Whats the weather app")
                     sys.exit()  # give user option to quit or run again
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
 
     elif choice == "3":
+        print("Thanks for using DaveTrev's Whats the weather app")
         break
     else:
         print(Fore.RED + "Invalid option. Please Try Again.")
