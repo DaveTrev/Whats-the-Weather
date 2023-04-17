@@ -3,3 +3,4 @@ colored==1.4.4
 configparser==5.3.0
 pyfiglet==0.8.post1
 termcolor==2.2.0
+requests
