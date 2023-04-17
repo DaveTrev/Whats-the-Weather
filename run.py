@@ -90,7 +90,7 @@ while True:
                 print(Fore.GREEN + "2) To return to the main menu.")
                 choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
                 # removes or truncates the given characters from the beginning and the end of the original string
-                choice = choice.strip()        ## change this menu option to return to main menu or quit program
+                choice = choice.strip()        # change this menu option to return to main menu or quit program
 
                 if choice == "1":
                     break
