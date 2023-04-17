@@ -39,6 +39,7 @@ choose another city option on current and forecast
 
 readme
 ## functionality i would like to add, generate current weather and give option to compare against historical data
+## in the future look at tkinter and build a gui for this app
 heroku deploy
 """
 
@@ -68,6 +69,8 @@ Time Series Analysis and Weather Forecast in Python - https://medium.com/@llmkho
 max min temp from stackoverflow javascript - https://stackoverflow.com/questions/55222100/how-to-get-min-and-max-temp-for-the-day-from-5-day-weather-forecast-js
 Creating daily forecasts with python - https://www.tomorrow.io/blog/creating-daily-forecasts-with-a-python-weather-api/
 rain print out  stackoverflow - https://stackoverflow.com/questions/68696505/how-to-find-rain-in-a-variable-for-openweathermap
+date / time and converting to strings - https://www.programiz.com/python-programming/datetime/strftime
+get datetime - https://www.programcreek.com/python/?CodeExample=get+datetime
 
 
 Data returned from open weather for current weather request "berlin"

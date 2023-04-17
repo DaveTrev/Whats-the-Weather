@@ -22,7 +22,7 @@ print(Fore.GREEN + welcome)
 
 while True:
     print("1) Current Weather")
-    print("2) 5-day Forcast")
+    print("2) Should I water the plants?")
     print("3) Quit")
 
     choice = input("Enter Choice:\n ")
@@ -60,7 +60,7 @@ while True:
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
             print(Fore.BLUE + f"The wind speed in {user_input} is: {wind}m/s2")
             if 'Rain' in current_weather: # checks if weather data contains rain
-                print(Fore.YELLOW + "bring a jacket & a umbrella, it's going to rain today")
+                print(Fore.YELLOW + "bring a jacket & a umbrella, looks like rain.")
             else:
                 print(Fore.YELLOW + "Looks like no rain is due for today!")
 
@@ -81,26 +81,25 @@ while True:
                     print(Fore.RED + "Invalid option, please try again.")
 
     elif choice == "2":
-        user_input = input("Enter your city, for a 5-day forecast:\n ")
+        user_input = input("Enter your city, to check for predicted rainfall:\n ")
         print(user_input)
 
         # Request data from openweather.com
-        open_weather_data_f = requests.get(
-            " https://api.openweathermap.org/data/2.5/forecast?q="
+        open_weather_data_c = requests.get(
+            "https://api.openweathermap.org/data/2.5/weather?q="
             + f"{user_input}&units=metric&APPID="
-            + f"{config['API']['key']}", timeout=5,
+            + f"{config['API']['key']}",
+            timeout=5,
         )
-        if open_weather_data_f.json()["cod"] == "404":  # Error handling 4 data
+        if open_weather_data_c.json()["cod"] == "404":  # Error handling 4 data
             print(Fore.RED + "No City Found")
         else: # gets weather data for the next five days
-            forecast_data_5 = open_weather_data_f.json()["list"]
-            print(Fore.BLUE + f"5-day forecast for {user_input}: ")
-            for data in forecast_data_5:
-                date = data["dt_txt"][:10]
-                time = data["dt_txt"][11:16]
-                temp = round(data["main"]["temp"])
-                weather = data["weather"][0]["main"]
-                print(Fore.BLUE + f"{date} at {time} - {weather}, {temp}°C")
+            current_weather = open_weather_data_c.json()["weather"][0]["main"]
+            if 'Rain' in current_weather: # checks if weather data contains rain
+                print(Fore.YELLOW + "its a day for the ducks.....Rain!")
+            else:
+                print(Fore.YELLOW + "No rain is due for today, Hooray!")
+
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Check weather in another city.")
