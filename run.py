@@ -51,12 +51,14 @@ while True:
             feels_like = open_weather_data_c.json()["main"]["feels_like"]
             humid = open_weather_data_c.json()["main"]["humidity"]
             clouds = open_weather_data_c.json()["clouds"]["all"]
+            wind = open_weather_data_c.json()["wind"]["speed"]
 
             print(Fore.BLUE + f"The weather in {user_input} is: {current_weather}")
             print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
             print(Fore.BLUE + f"It feels like in {user_input} is: {feels_like}°C")
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
+            print(Fore.BLUE + f"The wind speed in {user_input} is: {wind}m/s")
             if 'Rain' in current_weather: # checks if weather data contains rain
                 print(Fore.YELLOW + "bring a jacket & a umbrella, it's going to rain today")
             else:
