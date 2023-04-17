@@ -12,7 +12,18 @@
     <style>
         body {
             font-family: Arial;
+            background: rgb(52,116,204);
+            background: radial-gradient(circle, rgba(52,116,204,1) 0%, rgba(67,145,48,1) 100%);
+            background-repeat: no-repeat;            
+            background-attachment: fixed;        
         }
+
+        #container {           
+            display: flex;            
+            flex-direction: column;            
+            justify-content: center;            
+            align-items: center;        
+            }
 
         /**
         * Default styles for xterm.js
@@ -167,7 +178,7 @@
         }
     </style>
 </head>
-
+<div id="container">
 @{body}
-
+</div>
 </html>

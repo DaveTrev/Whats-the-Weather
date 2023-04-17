@@ -71,6 +71,7 @@ Creating daily forecasts with python - https://www.tomorrow.io/blog/creating-dai
 rain print out  stackoverflow - https://stackoverflow.com/questions/68696505/how-to-find-rain-in-a-variable-for-openweathermap
 date / time and converting to strings - https://www.programiz.com/python-programming/datetime/strftime
 get datetime - https://www.programcreek.com/python/?CodeExample=get+datetime
+css gradient background - https://cssgradient.io/
 
 
 Data returned from open weather for current weather request "berlin"
