@@ -1,12 +1,19 @@
 # Import libraries
+import os
 import configparser
 import requests
 import pyfiglet
 from colorama import Fore
 
+
 # Use configparser to read config.ini file
-config = configparser.ConfigParser()
-config.read("config.ini")
+if 'API_KEY' in os.environ:
+    config = {"API": {"key": None }}
+    config["API"]["key"] = os.environ.get("API_KEY")
+else:
+    config = configparser.ConfigParser()
+    config.read("config.ini")
+
 
 # pyfgilet used to style app greeting
 welcome = pyfiglet.figlet_format("Whats the weather?")
