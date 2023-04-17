@@ -44,7 +44,7 @@ while True:
 
         # Error handling for data request, no city found / print data
         if open_weather_data_c.json()["cod"] == "404":
-            print("No City Found")
+            print(Fore.RED + "No City Found")
         else: # gets current weather data
             current_weather = open_weather_data_c.json()["weather"][0]["main"]
             temp = round(open_weather_data_c.json()["main"]["temp"])
@@ -88,7 +88,7 @@ while True:
             + f"{config['API']['key']}", timeout=5,
         )
         if open_weather_data_f.json()["cod"] == "404":  # Error handling 4 data
-            print("No City Found")
+            print(Fore.RED + "No City Found")
         else: # gets weather data for the next five days
             forecast_data_5 = open_weather_data_f.json()["list"]
             print(Fore.BLUE + f"5-day forecast for {user_input}: ")
