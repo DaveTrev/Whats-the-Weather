@@ -58,7 +58,7 @@ while True:
             print(Fore.BLUE + f"It feels like in {user_input} is: {feels_like}°C")
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
-            print(Fore.BLUE + f"The wind speed in {user_input} is: {wind}m/s")
+            print(Fore.BLUE + f"The wind speed in {user_input} is: {wind}m/s2")
             if 'Rain' in current_weather: # checks if weather data contains rain
                 print(Fore.YELLOW + "bring a jacket & a umbrella, it's going to rain today")
             else:
