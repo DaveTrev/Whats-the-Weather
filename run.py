@@ -3,6 +3,7 @@ import os
 import configparser
 import requests
 import pyfiglet
+import sys
 from colorama import Fore
 
 
@@ -58,14 +59,14 @@ while True:
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
             if 'Rain' in current_weather:
-                print(Fore.YELLOW + "bring a jacket, you don't need to water the flowers, it's going to rain today")
+                print(Fore.YELLOW + "bring a jacket & a umbrella, it's going to rain today")
             else:
                 print(Fore.YELLOW + "Looks like no rain is due for today!")
                 
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Check weather in another city.")
-                print(Fore.GREEN + "2) To return to the main menu.")
+                print(Fore.GREEN + "2) Quit the program.")
                 choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
                 # removes or truncates the given characters from the beginning and the end of the original string
                 choice = choice.strip()  # change this menu option to return to main menu or quit program
@@ -73,8 +74,10 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
-                    break
-            continue
+                    sys.exit()  # give user option to quit or run again
+                else:
+                    print("Invalid option, please try again.")
+                
 
     elif choice == "2":
         user_input = input("Enter your city, for a 5-day forecast:\n ")
@@ -108,8 +111,9 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
-                    break
-            continue
+                    sys.exit()  # give user option to quit or run again
+                else:
+                    print("Invalid option, please try again.")
 
     elif choice == "3":
         break
