@@ -4,7 +4,7 @@ import configparser
 import sys
 import requests
 import pyfiglet
-from colorama import Fore
+from colorama import Fore, Style
 
 
 # Use configparser to read config.ini file
@@ -24,6 +24,7 @@ while True:
     print("1) Current Weather")
     print("2) Should I water the plants?")
     print("3) Quit")
+    print(Style.RESET_ALL)
 
     choice = input("Enter Choice:\n ")
     # using strip method to removing leading trailing white space
@@ -79,6 +80,7 @@ while True:
                     sys.exit()  # give user option to quit or run again
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
+                    print(Style.RESET_ALL)
 
     elif choice == "2":
         user_input = input("Enter your city, to check for predicted rainfall:\n ")
@@ -115,9 +117,11 @@ while True:
                     sys.exit()  # give user option to quit or run again
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
+                    print(Style.RESET_ALL)
 
     elif choice == "3":
         print("Thanks for using DaveTrev's Whats the weather app")
         break
     else:
         print(Fore.RED + "Invalid option. Please Try Again.")
+        print(Style.RESET_ALL)
