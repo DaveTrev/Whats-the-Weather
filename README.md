@@ -96,9 +96,10 @@ Below is the flowchart I made to follow along while coding. I initially drew it 
 
 Bug | Status | Fix |
 ----|--------|-----|
-Using the colorama module, when a invalid option was chosen the continued text would appear in the wrong colour, taking from the previous color option | Resolved | After warnings or invalid options selected Print(Style.RESET.ALL to return text to correct colour.
+Using the colorama module, when a invalid option was chosen the continued text would appear in the wrong colour, taking from the previous color option | Resolved | After warnings or invalid options selected Print Style.RESET.ALL to return text to correct colour.
 Problem with heroku deployment, Api key not found or loading| Resolved | Spent time with the student support team, they helped by adding lines 11 - 13 for configparser to work
 Heroku deploy, in freezing requirments for deployment, requests was not added to the reuirements.txt file| Resolved | Added manually to resolve issue.
+5 day forecast option printing, five days worth of weather data on 3 hour increments| Resolved | Removed 5 day forecast option and replaced with check for rain only option (I plan to add this functionality back in, when I have time) .
 
 ## Known Issues
 - As a Dubliner, I know when Dublin, is inputted as the reqeusted city, the app returns the weather for Dublin Ca not Dublin IE
