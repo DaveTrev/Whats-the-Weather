@@ -127,6 +127,9 @@ Heroku deploy, in freezing requirments for deployment, requests was not added to
 3. Click on the 'Fork' button in the upper left.
 4. Your forked version of this repo will be generated!
 
+### Version Control
+*  Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
+
 # Credits
 ## Code
 - https://openweathermap.org/ - The source of my API.
@@ -136,12 +139,8 @@ Heroku deploy, in freezing requirments for deployment, requests was not added to
 -  https://datagy.io/python-requests-timeouts/ - how to set a timeout request for a API call 
 - https://www.youtube.com/watch?v=baWzHKfrvqw - As a guide to buidling a basic weather app. I have tried to deviate from this as much as possible.
 - https://codeigo.com/python/check-if-user-pressed-enter For the code for intro()!
+- https://blog.netwrix.com/2022/11/14/how-to-hide-api-keys-github/#:~:text=So%20how%20can%20we%20hide,control%20(e.g.%2C%20gitignore). - Hiding API keys 
 <hr>
-
-### Version Control
-*   Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
-
-
 
 # Acknowledgments
 
