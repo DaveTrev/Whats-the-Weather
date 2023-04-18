@@ -101,6 +101,9 @@ Problem with heroku deployment, Api key not found or loading| Resolved | Spent t
 Heroku deploy, in freezing requirments for deployment, requests was not added to the reuirements.txt file| Resolved | Added manually to resolve issue.
 5 day forecast option printing, five days worth of weather data on 3 hour increments| Resolved | Removed 5 day forecast option and replaced with check for rain only option (I plan to add this functionality back in, when I have time) .
 
+## CI Python Linter
+[Result](readme_docs/CiLINTER.png)
+
 ## Known Issues
 - As a Dubliner, I know when Dublin, is inputted as the reqeusted city, the app returns the weather for Dublin Ca not Dublin IE
 - I am aware the deployed heroku site doesnt load on all phones.
