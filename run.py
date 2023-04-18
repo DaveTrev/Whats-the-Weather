@@ -22,7 +22,7 @@ print(Fore.GREEN + welcome)
 
 while True:
     print("1) Current Weather")
-    print("2) Should I water the plants?")
+    print("2) Cut to the chase is it going to rain?")
     print("3) Quit")
     print(Style.RESET_ALL)
 
