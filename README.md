@@ -57,15 +57,22 @@ I wanted to create a app that is both useful and revolves around a topic near an
 - Welcome Screen:
 The welcome screen shows when the player first loads the app. The styling is generated with the pyfiglet module.
 On loading the program the user is given three options, 1. To check current weather in any given city, 2. To check rainfall or "Cut to the chase, is it going to rain?" and 3. Quit the program
+
 ![welcome-screen](readme_docs/welcome_screen.png)
+
 - Enter City:
 On selection of the first option the user is asked to type in a city that they are interested in checking the current weather in.
+
 ![enter-city](readme_docs/which_city.png)
+
 - Alternate options:
 After the details of the city load, the user is asked if they would like to return to the main menu or quit the program
+
 ![returned-data](readme_docs/weather_data.png)
+
 - Cut to the Chase?
 using the same api call but purely checking if rain is returned in the city searched, the app with advise the user weather or not its going to rain.
+
 ![rain](readme_docs/rain.png)
 
 ## Future Features
