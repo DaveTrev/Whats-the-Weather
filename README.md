@@ -83,6 +83,7 @@ Building in a option of 5 day forecasting to each city is a feature I would look
 - Add a option of checking national weather warnings:
 Expanding on the idea of climate change, checking for weather warnings for different areas.
 - In the future I would like to import the tkinter python binding to potentially create a GUI interface for the expanded app.
+- In the future I would also like to rebuild this app in a more object oriented programming format. 
 
 # Design
 Below is the flowchart I made to follow along while coding. I initially drew it out on a notepad and then used [diagrams.net](https://www.diagrams.net/) to create it digitally.
