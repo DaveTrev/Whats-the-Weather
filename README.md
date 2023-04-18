@@ -1,3 +1,4 @@
+![banner](readme_docs/banner.png)
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -41,7 +42,7 @@ I wanted to create a app that is both useful and revolves around a topic near an
 - [Ci Python Linter](https://pep8ci.herokuapp.com/) to check python code
 - [Stack Overflow](https://stackoverflow.com/) Stack Overflow was one of the websites used for resolving issues with code.
 - [diagrams.net](https://www.diagrams.net/) for making the flowchart for the app.
-- [pixlr](https://pixlr.com/) for my README banner and editing of screen grab images.
+- [lunapic](https://www12.lunapic.com/editor/) for my README banner and editing of screen grab images.
 - [cssgradient.io](https://cssgradient.io/) to help create the gradient background on heroku
 
 # UX
@@ -56,16 +57,16 @@ I wanted to create a app that is both useful and revolves around a topic near an
 - Welcome Screen:
 The welcome screen shows when the player first loads the app. The styling is generated with the pyfiglet module.
 On loading the program the user is given three options, 1. To check current weather in any given city, 2. To check rainfall or "Cut to the chase, is it going to rain?" and 3. Quit the program
-![welcome-screen](readme_docs/features/intro_screen.png)
+![welcome-screen](readme_docs/welcome_screen.png)
 - Enter City:
 On selection of the first option the user is asked to type in a city that they are interested in checking the current weather in.
-![enter-name](readme_docs/features/enter_name.gif)
+![enter-city](readme_docs/which_city.png)
 - Alternate options:
 After the details of the city load, the user is asked if they would like to return to the main menu or quit the program
-![player-class](readme_docs/features/class.gif)
-- Should I water the plants?
+![returned-data](readme_docs/weather_data.png)
+- Cut to the Chase?
 using the same api call but purely checking if rain is returned in the city searched, the app with advise the user weather or not its going to rain.
-![race](readme_docs/features/race.gif)
+![rain](readme_docs/rain.png)
 
 ## Future Features
 - Historical Data comparison :
@@ -78,7 +79,7 @@ Expanding on the idea of climate change, checking for weather warnings for diffe
 
 # Design
 Below is the flowchart I made to follow along while coding. I initially drew it out on a notepad and then used [diagrams.net](https://www.diagrams.net/) to create it digitally.
-![flowchart](readme_docs/flowchart.png)
+![flowchart](readme_docs/Weather_app_diagram.drawio.png)
 
 <hr>
 
