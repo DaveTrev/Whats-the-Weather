@@ -67,7 +67,7 @@ while True:
 
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
-                print(Fore.GREEN + "1) Check weather in another city.")
+                print(Fore.GREEN + "1) Return to main menu.")
                 print(Fore.GREEN + "2) Quit the program.")
                 choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
                 # removes or truncates the given characters from the beginning and the end of the original string
@@ -76,7 +76,7 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
-                    print("Thanks for using DaveTrev's Whats the weather app")
+                    print(Fore.YELLOW + "Thanks for using DaveTrev's Whats the weather app")
                     sys.exit()  # give user option to quit or run again
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
@@ -104,7 +104,7 @@ while True:
 
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
-                print(Fore.GREEN + "1) Check weather in another city.")
+                print(Fore.GREEN + "1) Return to main menu.")
                 print(Fore.GREEN + "2) Quit the program.")
                 choice = input(Fore.GREEN + "Enter your choice: 1 or 2:\n ")
                 # removes or truncates the given characters from the beginning and the end of the original string
@@ -120,7 +120,7 @@ while True:
                     print(Style.RESET_ALL)
 
     elif choice == "3":
-        print("Thanks for using DaveTrev's Whats the weather app")
+        print(Fore.YELLOW + "Thanks for using DaveTrev's Whats the weather app")
         break
     else:
         print(Fore.RED + "Invalid option. Please Try Again.")
