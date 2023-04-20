@@ -36,14 +36,17 @@ def main():
 
 
 while True:
-    print("1) Current Weather")
-    print("2) Cut to the chase..... is it going to rain?")
-    print("3) Quit")
-    print(Style.RESET_ALL)
+    try:
+        print("1) Current Weather")
+        print("2) Cut to the chase..... is it going to rain?")
+        print("3) Quit")
+        print(Style.RESET_ALL)
 
-    choice = input("Enter Choice:\n ")
-    # using strip method to removing leading trailing white space
-    choice = choice.strip()
+        choice = input("Enter Choice:\n ")
+        # using strip method to removing leading trailing white space
+        choice = choice.strip()
+    except ValueError():
+        print("Sorry I did not understand that")
 
     # Prompt user to enter a city
     if choice == "1":

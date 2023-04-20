@@ -38,6 +38,7 @@ I wanted to create a app that is both useful and revolves around a topic near an
 - [Python](https://www.python.org/) for the main game-play.
 - [GitHub](https://github.com/) as a remote repository.
 - [Heroku](https://heroku.com) to deploy the website.
+- [Replit](https://replit.com) to use as a coding space for testing ideas outside of gitpod
 - [OpenWeatherMap](https://openweathermap.org/) The site that I am using their API
 - [Ci Python Linter](https://pep8ci.herokuapp.com/) to check python code
 - [diagrams.net](https://www.diagrams.net/) for making the flowchart for the app.
