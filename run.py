@@ -3,6 +3,7 @@ import os
 import configparser
 import sys
 import requests
+import time
 import pyfiglet
 from colorama import Fore, Style
 
@@ -33,7 +34,7 @@ while True:
     # Prompt user to enter a city
     if choice == "1":
         user_input = input("Enter your city:\n ")
-        print(user_input)
+        time.sleep(2)
 
         # Request data from openweather.com
         open_weather_data_c = requests.get(
@@ -84,7 +85,7 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
-                    print(Fore.YELLOW + "Thanks for using DaveTrev's"
+                    print(Fore.YELLOW + "Thanks for using DaveTrev's "
                                         "Whats the weather app")
                     sys.exit()  # give user option to quit or run again
                 else:
@@ -94,7 +95,7 @@ while True:
     elif choice == "2":
         user_input = input("Enter your city,"
                            "to check for predicted rainfall:\n ")
-        print(user_input)
+        time.sleep(2)
 
         # Request data from openweather.com
         open_weather_data_c = requests.get(
@@ -124,7 +125,7 @@ while True:
                     and the end of the original string
                 """
                 choice = choice.strip()
-# menu option, main menu or quit program
+                # menu option, main menu or quit program
                 if choice == "1":
                     break
                 elif choice == "2":
@@ -135,7 +136,7 @@ while True:
                     print(Style.RESET_ALL)
 
     elif choice == "3":
-        print(Fore.YELLOW + "Thanks for using DaveTrev's"
+        print(Fore.YELLOW + "Thanks for using DaveTrev's "
                             "Whats the weather app")
         break
     else:
