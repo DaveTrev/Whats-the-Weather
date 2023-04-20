@@ -40,7 +40,6 @@ I wanted to create a app that is both useful and revolves around a topic near an
 - [Heroku](https://heroku.com) to deploy the website.
 - [OpenWeatherMap](https://openweathermap.org/) The site that I am using their API
 - [Ci Python Linter](https://pep8ci.herokuapp.com/) to check python code
-- [Stack Overflow](https://stackoverflow.com/) Stack Overflow was one of the websites used for resolving issues with code.
 - [diagrams.net](https://www.diagrams.net/) for making the flowchart for the app.
 - [lunapic](https://www12.lunapic.com/editor/) for my README banner and editing of screen grab images.
 - [cssgradient.io](https://cssgradient.io/) to help create the gradient background on heroku
@@ -84,6 +83,7 @@ Building in a option of 5 day forecasting to each city is a feature I would look
 Expanding on the idea of climate change, checking for weather warnings for different areas.
 - In the future I would like to import the tkinter python binding to potentially create a GUI interface for the expanded app.
 - In the future I would also like to rebuild this app in a more object oriented programming format. 
+- As a late stage addition, I wanted to added ascii art to the notifications on rainfall, the art failed passing through the linter, it is a feature I will add in the future as it is too late before submission to tinker with.
 
 # Design
 Below is the flowchart I made to follow along while coding. I initially drew it out on a notepad and then used [diagrams.net](https://www.diagrams.net/) to create it digitally.
@@ -138,9 +138,13 @@ Heroku deploy, in freezing requirments for deployment, requests was not added to
 - https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/ - as a guide to using the pyfiglet module.
 - https://www.geeksforgeeks.org/print-colors-python-terminal/ - as a guide to colouring text in a python terminal.
 -  https://datagy.io/python-requests-timeouts/ - how to set a timeout request for a API call 
+- https://stackoverflow.com/questions/66511281/reading-api-keys-with-configparser - StackOverflow thread on Configparser
 - https://www.youtube.com/watch?v=baWzHKfrvqw - As a guide to buidling a basic weather app. I have tried to deviate from this as much as possible.
 - https://codeigo.com/python/check-if-user-pressed-enter For the code for intro()!
-- https://blog.netwrix.com/2022/11/14/how-to-hide-api-keys-github/#:~:text=So%20how%20can%20we%20hide,control%20(e.g.%2C%20gitignore). - Hiding API keys 
+- https://blog.netwrix.com/2022/11/14/how-to-hide-api-keys-github/#:~:text=So%20how%20can%20we%20hide,control%20(e.g.%2C%20gitignore). - Hiding API keys
+- https://www.asciiart.eu/nature/rains - Ascii art taken from this site.
+- https://www.youtube.com/watch?v=arcFqEuV_XQ - guide to printing ascii art
+- https://stackoverflow.com/questions/49103277/python-printing-ascii-art-from-text-file-backslashes-are-being-doubled - printing ascii art
 <hr>
 
 # Acknowledgments

@@ -2,8 +2,8 @@
 import os
 import configparser
 import sys
-import requests
 import time
+import requests
 import pyfiglet
 from colorama import Fore, Style
 
@@ -17,9 +17,23 @@ else:
     config.read("config.ini")
 
 
-# pyfgilet used to style app greeting
-welcome = pyfiglet.figlet_format("Whats the weather?")
-print(Fore.GREEN + welcome)
+def intro():
+    """
+    Weather app greeting message and menu options
+    """
+    # pyfgilet used to style app greeting
+    welcome = pyfiglet.figlet_format("Whats the weather?")
+    print(Fore.GREEN + welcome)
+
+
+intro()
+
+
+def main():
+    """
+    Main function of program
+    """
+
 
 while True:
     print("1) Current Weather")
@@ -54,7 +68,7 @@ while True:
             humid = open_weather_data_c.json()["main"]["humidity"]
             clouds = open_weather_data_c.json()["clouds"]["all"]
             wind = open_weather_data_c.json()["wind"]["speed"]
-
+            # Print weather requests of user reqeusted city
             print(Fore.BLUE + f"The weather in {user_input} is: "
                               f"{current_weather}")
             print(Fore.BLUE + f"The temperature in {user_input} is: {temp}°C")
@@ -69,7 +83,7 @@ while True:
                                     "looks like rain.")
             else:
                 print(Fore.YELLOW + "Looks like no rain is due for today!")
-
+    # Gives user option to return to menu and search another city or quit.
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Return to main menu.")
@@ -91,7 +105,7 @@ while True:
                 else:
                     print(Fore.RED + "Invalid option, please try again.")
                     print(Style.RESET_ALL)
-
+    # alternate option to check rainfall for user input city
     elif choice == "2":
         user_input = input("Enter your city,"
                            "to check for predicted rainfall:\n ")
@@ -113,7 +127,6 @@ while True:
                 print(Fore.YELLOW + "its a day for the ducks.....Rain!")
             else:
                 print(Fore.YELLOW + "No rain is due for today, Hooray!")
-
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Return to main menu.")
@@ -142,3 +155,5 @@ while True:
     else:
         print(Fore.RED + "Invalid option. Please Try Again.")
         print(Style.RESET_ALL)
+
+main()
