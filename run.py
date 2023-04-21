@@ -22,7 +22,7 @@ def clear_console():
     Clears the console.
     """
     os.system('cls' if os.name == 'nt' else 'clear')
-    
+
 
 def intro():
     """

@@ -146,6 +146,8 @@ Heroku deploy, in freezing requirments for deployment, requests was not added to
 - https://www.asciiart.eu/nature/rains - Ascii art taken from this site.
 - https://www.youtube.com/watch?v=arcFqEuV_XQ - guide to printing ascii art
 - https://stackoverflow.com/questions/49103277/python-printing-ascii-art-from-text-file-backslashes-are-being-doubled - printing ascii art
+- https://github.com/JamesFahey/zombie-survival - I took inspiration of using the clear console command from this project.
+- https://www.youtube.com/watch?v=nqx2kMgKRVo - used this video as a method to learning how a simple menu system is made.
 <hr>
 
 # Acknowledgments
