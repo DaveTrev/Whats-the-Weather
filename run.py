@@ -17,6 +17,13 @@ else:
     config.read("config.ini")
 
 
+def clear_console():
+    """
+    Clears the console.
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
+
 def intro():
     """
     Weather app greeting message and menu options
@@ -36,23 +43,20 @@ def main():
 
 
 while True:
-    try:
-        print("1) Current Weather")
-        print("2) Cut to the chase..... is it going to rain?")
-        print("3) Quit")
-        print(Style.RESET_ALL)
+    print("1) Current Weather")
+    print("2) Cut to the chase..... is it going to rain?")
+    print("3) Quit")
+    print(Style.RESET_ALL)
 
-        choice = input("Enter Choice:\n ")
-        # using strip method to removing leading trailing white space
-        choice = choice.strip()
-    except ValueError():
-        print("Sorry I did not understand that")
+    choice = input("Enter Choice:\n ")
+    # using strip method to removing leading trailing white space
+    choice = choice.strip()
 
     # Prompt user to enter a city
     if choice == "1":
         user_input = input("Enter your city:\n ")
         time.sleep(2)
-
+        clear_console()
         # Request data from openweather.com
         open_weather_data_c = requests.get(
             "https://api.openweathermap.org/data/2.5/weather?q="
@@ -80,12 +84,15 @@ while True:
             print(Fore.BLUE + f"The humidity in {user_input} is: {humid}%")
             print(Fore.BLUE + f"The cloud cover in {user_input} is: {clouds}")
             print(Fore.BLUE + f"The wind speed in {user_input} is: {wind}m/s2")
+            print()
             # checks if weather data contains rain
             if 'Rain' in current_weather:
                 print(Fore.YELLOW + "bring a jacket & a umbrella,"
                                     "looks like rain.")
+                print()
             else:
                 print(Fore.YELLOW + "Looks like no rain is due for today!")
+                print()
     # Gives user option to return to menu and search another city or quit.
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
@@ -102,6 +109,8 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
+                    time.sleep(2)
+                    clear_console()
                     print(Fore.YELLOW + "Thanks for using DaveTrev's "
                                         "Whats the weather app")
                     sys.exit()  # give user option to quit or run again
@@ -113,7 +122,7 @@ while True:
         user_input = input("Enter your city,"
                            "to check for predicted rainfall:\n ")
         time.sleep(2)
-
+        clear_console()
         # Request data from openweather.com
         open_weather_data_c = requests.get(
             "https://api.openweathermap.org/data/2.5/weather?q="
@@ -128,8 +137,10 @@ while True:
             # checks if weather data contains rain
             if 'Rain' in current_weather:
                 print(Fore.YELLOW + "its a day for the ducks.....Rain!")
+                print()
             else:
                 print(Fore.YELLOW + "No rain is due for today, Hooray!")
+                print()
             while True:
                 print(Fore.GREEN + "Select what you would like to do next")
                 print(Fore.GREEN + "1) Return to main menu.")
@@ -145,6 +156,8 @@ while True:
                 if choice == "1":
                     break
                 elif choice == "2":
+                    time.sleep(2)
+                    clear_console()
                     print("Thanks for using DaveTrev's Whats the weather app")
                     sys.exit()  # give user option to quit or run again
                 else:
